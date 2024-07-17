@@ -6,24 +6,47 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="shortcut icon" href="imagens/android-chrome-512x512.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
         <title>Mabe Farma</title>
     </head>
     <body>
         <main >
-            <header>
-                <div class="container-fluids header">
-                    <img src="imagens/img-logo.png" alt="logo" id="img-logo">
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a href="#sobre">Nossa  História</a></li>
-                            <li><a href="#produtos">Produtos</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                            <li><a href="job.html">Trabalhe Conosco</a></li>
-                        </ul>
-                    </nav>
+          <header>
+            <div class="container-fluids header">
+                <img src="imagens/img-logo.png" alt="logo" id="img-logo">
+                <div class="mobile-menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"> <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
                 </div>
-            </header>
+                <nav class="main-menu">
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li> 
+                      <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Nossa História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="job.html">Trabalhe Conosco</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mobile-contact" id="mobile-contact">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64h96v80c0 6.1 3.4 11.6 8.8 14.3s11.9 2.1 16.8-1.5L309.3 416H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64z"/>
+                    </svg>
+                  
+                  </div>
+            </div>
+        </header>
+
             <section>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-wrap="true">
                     <div class="carousel-indicators">
@@ -33,15 +56,15 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="imagens/itos.png" class="d-block w-100" alt="Slide 1">
+                            <img src="imagens/itos3.png" class="d-block w-100" alt="Slide 1">
+                            <div class="carousel-caption d-none d-md-block"></div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/itos.png" class="d-block w-100" alt="Slide 2">
                             <div class="carousel-caption d-none d-md-block"></div>
                         </div>
                         <div class="carousel-item">
                             <img src="imagens/itos2.png" class="d-block w-100" alt="Slide 2">
-                            <div class="carousel-caption d-none d-md-block"></div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="imagens/itos3.png" class="d-block w-100" alt="Slide 3">
                             <div class="carousel-caption d-none d-md-block"></div>
                         </div>
                     </div>
@@ -62,7 +85,7 @@
                 </div>
                 <div class="ofTips">
                   <div class="card refTips">
-                    <img src="imagens/time_11040485.png" class="img1" alt="ofT1">
+                    <img src="imagens/time_11040485.png" class="img2" alt="ofT1">
                     <h2>Envio em até 24h para todo Brasil</h2>
                     <p>Eficiência e agilidade para sua total satisfação. Confiabilidade e dedicação em cada etapa, garantindo que seus pedidos cheguem sempre no prazo.</p>
                   </div>
@@ -73,7 +96,7 @@
                   </div>
                   <div class="card refTips">
                     <img src="imagens/certificate_3135763.png" class="img1" alt="ofT3">
-                    <h2>Produtos certificados pela ANVISA</h2>
+                    <h2>Certificados pela ANVISA</h2>
                     <p>Qualidade e segurança garantidas. Cada entrega reflete nosso compromisso com sua confiança e bem-estar com produtos legítimos.</p>
                   </div>
                   <div class="card refTips">
@@ -84,8 +107,6 @@
                 </div>
               </section>
               
-            </div>
-        </section>
 
         <section id="sobre" class="Sobre">
           <div class="textoSobre">
@@ -95,25 +116,8 @@
             <p>Com parcerias sólidas com fabricantes renomados, desenvolvemos um sistema de distribuição que prioriza a segurança, a pontualidade e a integridade dos produtos.</p>
           </div>
             
-        </section>
-          <!--   <section class="Sobre"> 
-                <div class="imagemSobre">
-                    <img class="imgSobre" src="imagens/pexels-suzyhazelwood-3652103.jpg" alt="imgSobre">    
-                </div>
-                <div class="txtSobre" id="sobre">
-                    <h1 class="titulos">Sobre</h1>
-                        <ul class="indiceSobre">
-                            <li id="empresaItem">Empresa</li>
-                            <li id="missaoItem">Missão</li>
-                        </ul>
-                    <div id="textoDinamicoSobre">
-                        <span id="textoEmpresa" class="texto1"><p class="tamanho"> Empresa  Sobre Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit nibh imperdiet placerat sodales. In dignissim, nisl quis condimentum iaculis, arcu dui lacinia mauris, ac iaculis justo mi quis ex. Aenean cursus semper diam, et imperdiet justo. Praesent a libero eu massa ultricies porta non maximus ante. Suspendisse et orci eros. Aliquam erat volutpat. Etiam at felis sapien. Nulla molestie sapien mi, quis egestas nibh dictum at. In ornare ante a lorem feugiat, ac condimentum lacus sodales. Sed efficitur metus et nibh posuere, vitae dictum mauris maximus. Nulla molestie neque laoreet, bibendum massa eu, venenatis diam. Mauris feugiat magna nibh, ac scelerisque arcu sollicitudin vel. Vestibulum luctus porta luctus. Ut gravida lorem eu gravida rhoncus. Nam lectus tellus, consequat eu lorem ut, accumsan tempus velit.</p></span>
-                        <span id="textoMissao" class="texto2"><p class="tamanho"> Missão Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit nibh imperdiet placerat sodales. In dignissim, nisl quis condimentum iaculis, arcu dui lacinia mauris, ac iaculis justo mi quis ex. Aenean cursus semper diam, et imperdiet justo. Praesent a libero eu massa ultricies porta non maximus ante. Suspendisse et orci eros. Aliquam erat volutpat. Etiam at felis sapien. Nulla molestie sapien mi, quis egestas nibh dictum at. In ornare ante a lorem feugiat, ac condimentum lacus sodales. Sed efficitur metus et nibh posuere, vitae dictum mauris maximus. Nulla molestie neque laoreet, bibendum massa eu, venenatis diam. Mauris feugiat magna nibh, ac scelerisque arcu sollicitudin vel. Vestibulum luctus porta luctus. Ut gravida lorem eu gravida rhoncus. Nam lectus tellus, consequat eu lorem ut, accumsan tempus velit.</p></span>
-                    </div>
-                        
-                </div>
-            </section> -->
-            
+        </section> 
+      
             <section id="produtos">  
                 <div class="tituloDefault">
                     <h1 class="titulos">Produtos</h1>
@@ -121,92 +125,65 @@
                 <div class="produtos">
                 <div class="box-container">
                   <div class="first-content">
-                    <img class="box" src="imagens/medicamentos.jpg" alt="medicamentos">
+                    <!--<img class="box" src="imagens/medicamentos.jpg" alt="medicamentos">-->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#0152a4" d="M64 144c0-26.5 21.5-48 48-48s48 21.5 48 48V256H64V144zM0 144V368c0 61.9 50.1 112 112 112s112-50.1 112-112V189.6c1.8 19.1 8.2 38 19.8 54.8L372.3 431.7c35.5 51.7 105.3 64.3 156 28.1s63-107.5 27.5-159.2L427.3 113.3C391.8 61.5 321.9 49 271.3 85.2c-28 20-44.3 50.8-47.3 83V144c0-61.9-50.1-112-112-112S0 82.1 0 144zm296.6 64.2c-16-23.3-10-55.3 11.9-71c21.2-15.1 50.5-10.3 66 12.2l67 97.6L361.6 303l-65-94.8zM491 407.7c-.8 .6-1.6 1.1-2.4 1.6l4-2.8c-.5 .4-1 .8-1.6 1.2z"/></svg>
+                    <h3>Medicamentos</h3>
                   </div>
                   <div class="second-content">
                     <span>Comprimidos, injetáveis e quimioterápicos</span>
+                    <a href="https://wa.link/55d67g">Saiba Mais</a>
                   </div>
                 </div>
                
                 <div class="box-container">
                   <div class="first-content">
-                    <img class="box" src="imagens/Mat.Hosp.jpg" alt="matHosp">
+                   <!--<img class="box" src="imagens/Mat.Hosp.jpg" alt="matHosp">-->
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#0152a4" d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H96V32H64zm64 0V480H448V32H128zM512 480c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H480V480h32zM256 176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H320v48c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V288H208c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16h48V176z"/></svg>
+                    <h3>Materiais Hospitalares</h3>
                   </div>
                   <div class="second-content">
                     <span>Itens e suprimentos diversos utilizados em procedimentos médicos e hospitalares para o atendimento e cuidado dos pacientes.</span>
+                    <a href="https://wa.me/5551989213425?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20Materiais%20Hospitalares">Saiba Mais</a>
                   </div>
                 </div>
             </div>   
               </section>
               
-        <!-- <section id="form">
-            <div class="formulario">
-                <h1>Faça parte do nosso time</h1>
-                <p>Junte-se a uma equipe dinâmica e inovadora que valoriza o talento e a paixão. Contribua para projetos desafiadores e cresça com a gente. Envie sua aplicação hoje e faça parte do nosso sucesso!</p>
-                <form action="" method="" enctype="">
-                  <div class="campoForm">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" required>
+              <footer id="footer" class="footer">
+                <img id="gif" src="imagens/Design sem nome.gif" alt="mapa">
+                <div class="footer-left">
+                  <div class="txt1">
+                    <img  src="imagens/maps.png" alt="maps">
+                    <p><strong>Mabe Farma Produtos Hospitalares</strong><br>R. Diretor Augusto Pestana, 492<br>Bairro Fátima, Canoas - RS, 92200-580</p>
                   </div>
-                  <div class="campoForm">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                  <div class="txt2">
+                    <img src="imagens/call.png" alt="cel">
+                    <p><strong>Atendemos de Seg. a Sex.</strong><br>das 8hr ao 12h - das 13:30h às 18hrs<br>(51) 2313-7300</p>
                   </div>
-                  <div class="campoForm">
-                    <label for="cover-letter">Carta de Apresentação:</label>
-                    <textarea id="cover-letter" name="cover-letter" rows="5" required></textarea>
-                  </div>
-                  <div class="campoForm">
-                    <label for="resume">Upload de Arquivo:</label>
-                    <input type="file" id="resume" name="resume" required>
-                  </div>
-                  <div class="campoForm">
-                    <button type="submit">Enviar</button>
-                  </div>
-                </form>
-              </div>
-        </section> -->
-        <div id="contato">
-
-        </div>
-        <footer>
-          <img  id="gif" src="imagens/Design sem nome.gif" alt="mapa">
-           <div class="footer-left">
-             <div class="txt1">
-                <img src="imagens/maps.png" alt="maps">
-                
-                <p><strong>Mabe Farma Produtos Hospitalares</strong><br>R. Diretor Augusto Pestana, 492<br>Bairro Fátima, Canoas - RS, 92200-580</p>
-             </div>
-             <div class="txt2">
-                <img src="imagens/call.png" alt="cel">
-                <p><strong>Atendimento</strong><br>Atendemos de Seg. a Sex. <br>das 8hrs às 18hrs</p>
-             </div>
-           </div>
-
-           <div class="footer-right">
-            <p>Nos siga nas Redes sociais</p>
-            <div class="socialCard">
-                <a href="https://www.instagram.com/mabefarma/" class="socialContainer containerFour">
-                  <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
-                </a>
-
+                </div>
                 <div class="socialCard">
-                  <a href="https://www.facebook.com/profile.php?id=61555261952858 " class="socialContainer containerFour">
+                  <a href="https://www.instagram.com/mabefarma/" target="_blank" class="socialContainer containerFour">
+                    <svg class="socialSvg instagramSvg" viewBox="0 0 16 16">
+                      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                    </svg>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61555261952858" target="_blank" class="socialContainer containerFour">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" class="socialSvg">
                       <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path>
                     </svg>
                   </a>
+                  <a href="https://wa.me/5551989213425?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20empresa%2C%20servi%C3%A7os%20e%20cota%C3%A7%C3%B5es." class="socialContainer containerFour" target="_blank">
+                    <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+                    </svg>
+                  </a>
                 </div>
-                
-              
-                <a href="#" class="socialContainer containerFour">
-                  <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
-                </a>
-              </div>
-           </div>
-        
-        </footer>
-     <script src="main.js"></script>    
+                <img id="logo" src="imagens/logoMabeft.png" alt="logo">
+              </footer>
+        </main>
+     <script src="js/main.js"></script>    
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     
+
     </body>
 </html>
